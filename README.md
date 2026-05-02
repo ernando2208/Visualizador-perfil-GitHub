@@ -37,6 +37,14 @@ Este visualizador permite pesquisar um usuário do GitHub pelo nome de usuário 
 - A API pode impor limites de requisição para IPs não autenticados.
 - Caso o usuário não seja encontrado, uma mensagem de erro será exibida.
 
+## Publicação no GitHub Pages
+
+Este projeto está preparado para publicação automática via GitHub Pages usando GitHub Actions.
+
+- Um workflow está criado em `.github/workflows/pages.yml`
+- Ao enviar mudanças para o branch `main`, o GitHub Pages deverá publicar o site automaticamente
+- Caso necessário, ative o GitHub Pages nas configurações do repositório e configure para usar a branch `main`
+
 ## Melhorias possíveis
 
 - Adicionar suporte a autenticação com token para aumentar o limite de requisições
